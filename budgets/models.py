@@ -35,7 +35,7 @@ class ExpenseItem(models.Model):
 
 class Message(models.Model):
     title = models.CharField('Title', max_length=100)
-    email = models.CharField('Email', max_length=20)
+    email = models.CharField('Email', max_length=50)
     message = models.TextField('Message', blank=True, null=True)
 
     def __str__(self):
